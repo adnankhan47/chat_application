@@ -1,0 +1,354 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgb(248, 253, 255);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(225, 252, 255),rgb(255, 255, 255));
+  /* background-color:linear-gradient(to right top, rgb(207, 250, 254), rgb(255, 255, 255), rgb(207, 250, 254)); */
+  font-family: Inter , sans-serif;
+  /* padding: 0.5rem; */
+  padding-right: 0.5vh;
+  padding-left: 0.5vh;
+  padding-top: 0.2vh;
+  padding-bottom: 0.2vh;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 25%);
+  width: auto;
+}
+h1{
+  padding:7px;
+  margin-left:45%;
+  font-family:Inter , sans-serif;
+  color: black ;
+}
+
+
+
+
+.chatContainer{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  margin-top: 40px;
+
+}
+
+
+.chatt{
+  display: flex;
+  flex-direction: column;
+  /* justify-content:center; */
+  width: 80%;
+  height: 600px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid rgb(110, 150, 158) ;
+  /* align-items: center; */
+}
+
+.bot{
+  flex-wrap:wrap;
+  font-size:16px;
+  font-family:Inter , sans-serif;
+  margin-bottom:10px;
+  border: 1px solid gainsboro;
+  border-bottom:1px solid #a9d5f2;
+  border-radius:22px;
+  border-bottom-left-radius: 0px;
+  /* margin-right:500px;  */
+  margin-right: 25%;
+  margin-left:10px;
+  /* padding:10px 10px 10px ;
+  padding-bottom: 10px; */
+  padding: 16px;
+  /* max-width:45%; */
+  width:95%;
+  background-color:whitesmoke;
+  color:black;
+  float:left;
+  display:block;
+  font-weight: 600;
+}
+.user{
+  flex-wrap:wrap;
+  font-size:16px;
+  font-family:Inter , sans-serif;
+  margin-bottom:15px;
+  border: 1px solid gainsboro;
+  border-bottom:1px solid #85c885;
+  border-radius:22px;
+  border-bottom-right-radius: 0px;
+
+  /* margin-left:500px; */
+  margin-left: 2%;
+  margin-right:10px;
+  /* padding:20px 20px 20px ;
+  padding-bottom: 20px; */
+  padding: 16px;
+  /* max-width:45%; */
+  width:95%;
+  background-color:whitesmoke;
+  color:black;
+  float:right;
+  display:block;
+  margin-top: 15px;
+  font-weight: 600;
+}
+
+.input{
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+
+.input input{
+  
+  height: 30px;
+  width:78.6%;
+  margin-top: 10px;
+  padding: 16px;
+  font-size:16px;
+  border-radius: 12px;
+  border: 1px solid rgb(110, 150, 158) ;
+  background-color: rgb(250, 250, 250);
+  outline: -webkit-focus-ring-color auto 0px !important;
+  }
+
+.input button{
+    width:25% ;
+    margin-top: 20px;
+    padding-left:25px;
+    padding-right:25px;;
+    background-color:rgb(30, 28, 28);
+    /* margin-left: 5px; */
+    border-radius: 8px;
+    height: 50px;
+    color: white;
+    font-size:16px;
+    cursor: pointer;
+    /* margin-bottom: 20px; */
+
+}
+
+
+/* Add the following styles to your existing index.css */
+
+/* Common styles for Register and Login forms */
+.form-container {
+  width: 40%;
+  margin: auto;
+  padding: 20px;
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  border: 1px solid gainsboro;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 25%);
+  margin-top: 40px;
+}
+
+label {
+  font-family: 'Inter', sans-serif;
+  font-size: 16px;
+}
+
+input {
+  height: 30px;
+  width:98%;
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 12px;
+  border: 1px solid gainsboro;
+  background-color: rgb(250, 250, 250);
+}
+
+span.error {
+  color: red;
+  font-size: 14px;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgb(30, 28, 28);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Specific styles for Register form */
+.register-container {
+  margin-top: 40px;
+}
+
+p {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Specific styles for Login form */
+.login-container {
+  margin-top: 40px;
+}
+
+.login-error {
+  color: red;
+  margin-top: 10px;
+}
+
+.info_n_logout{
+  display: flex;
+  flex-direction:row-reverse;
+  align-items:self-start;
+}
+
+.username{
+  padding:9px;
+  /* margin-left:45%; */
+  font-family:Inter , sans-serif;
+  color: rgb(110, 150, 158) ;
+  margin-right: 10%;
+}
+.info_n_logout button{
+  width: 7%;
+  margin-top: 20px;
+  padding: 12px;
+  background-color: rgb(30, 28, 28);
+  border-radius: 8px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  position: absolute;
+  margin-right: 50px;
+}
+
+  @media only screen and (min-width:320px) and  (max-width: 750px){
+
+    body {
+      height: 600px;
+      
+    }
+
+    .chatt{
+      margin-top:2px;
+      margin-bottom: 1;
+      height: 450px;
+    }
+    .head {
+      display: flex;
+      align-items: center;
+      font-family: Inter , sans-serif;
+      /* padding: 0.5rem; */
+      /* padding-right: 0.5vh;
+      padding-left: 0.5vh;
+      padding-top: 0.2vh;
+      padding-bottom: 0.2vh; */
+      width: auto;
+      height: 80px;
+    }
+
+    h1{
+      /* padding-right: 20px; */
+      margin-left:22%;
+      font-family:Inter , sans-serif;
+    } 
+    
+    .bot{
+      flex-wrap:wrap;
+      font-size:14px;
+      font-family: Inter , sans-serif;;
+      width:80%;
+      float:left;
+      display:block;
+    }
+
+    .user{
+      flex-wrap:wrap;
+      font-size:14px;
+      font-family: Inter , sans-serif;;
+      width:80%;  
+      margin-left:6%;
+      float:left;
+      display:block;
+    }
+    .input input{
+  
+      height: 30px;
+      width:71%;
+      padding: 10px;
+      margin-top: 15px;
+      font-size:14px;
+      }
+
+      .input button{
+        width:60% ;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left:25px;
+        padding-right:25px;;
+        background-color:rgb(30, 28, 28);
+        /* margin-left: 5px; */
+        border-radius: 8px;
+        height: 50px;
+        color: white;
+        font-size:16px;
+        /* margin-bottom: 20px; */
+    
+      }
+      .form-container {
+        width: 75%;
+        margin: auto;
+        padding: 20px;
+        background-color: rgb(255, 255, 255);
+        border-radius: 10px;
+        border: 1px solid gainsboro;
+        box-shadow: 0 0 20px rgba(0, 0, 0, 25%);
+        margin-top: 40px;
+      }
+
+      .info_n_logout{
+        display: flex;
+        flex-direction:row-reverse;
+        align-items:self-start;
+      }
+      
+      .username{
+        padding:9px;
+        /* margin-left:45%; */
+        font-family:Inter , sans-serif;
+        color: rgb(110, 150, 158) ;
+        margin-right: 40%;
+      }
+      .info_n_logout button{
+        width: 25%;
+        margin-top: 24px;
+        /* padding: 12px; */
+        background-color: rgb(30, 28, 28);
+        border-radius: 8px;
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        position: absolute;
+        margin-right: 10%;
+        height: 35px;
+        padding: 0px !important;
+      }
+
+
+  }
+
+
