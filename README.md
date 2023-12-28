@@ -25,6 +25,7 @@ Before running the application, ensure you have the following installed:
 
    ```bash
    git clone https://github.com/adnankhan47/chat_application.git
+switch to devlopment branch
   
 
 Backend Setup
