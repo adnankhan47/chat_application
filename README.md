@@ -45,21 +45,18 @@ Install backend dependencies:
 npm install
 
 Run the backend server:
-npm start
+node index.js
 
 Frontend Setup
 Open a new terminal window and navigate to the frontend directory:
-
-
 cd frontend
+
 Install frontend dependencies:
-
-
 npm install
+
 Run the frontend application:
-
-
 npm start
+
 Open your browser and visit http://localhost:3000 to access the chat application.
 
 Usage
